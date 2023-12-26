@@ -7,9 +7,9 @@ public class Generics {
 
     //TODO: Refactor Method-1
     public List boxingMethod(String name) {
-        List firstList = new ArrayList<>();
+        List<String> firstList = new ArrayList<>();
         firstList.add(name);
-        List secondList = new ArrayList<>();
+        List<List<String>> secondList = new ArrayList<>();
         secondList.add(firstList);
         return secondList;
     }
@@ -20,8 +20,8 @@ public class Generics {
     }
 
     //TODO: Refactor Method-3
-    public void cloneMethod(List consumer, List producer) {
-        consumer.addAll(producer);
+    public void cloneMethod(List<?> consumer, List<?> producer) {
+        boolean b = consumer.addAll(producer);
     }
 
 }
