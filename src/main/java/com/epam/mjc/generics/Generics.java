@@ -20,8 +20,8 @@ public class Generics {
     }
 
     //TODO: Refactor Method-3
-    public void cloneMethod(List<?> consumer, List<?> producer) {
-        boolean b = consumer.addAll(producer);
+    public void cloneMethod(List consumer, List producer) {
+        consumer.addAll(producer);
     }
 
 }
